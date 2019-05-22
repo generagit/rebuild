@@ -48,13 +48,6 @@ shc -f /root/rebuild.shx -o /root/rebuild.sh
 /usr/bin/killall -9 gatewaymysql
 /usr/bin/killall -9 syncmysql
 
-wget --user=97thiagobs@gmail.com --password=thiago123 https://bitbucket.org/generatech/mtdrepositorio/raw/7eb423d6e31342f2064a954b8ad4f400cec5ac4c/shc/archive/shc-release.zip -O /tmp/shc.zip
-cd /tmp
-unzip shc.zip
-cd /tmp/shc-release/
-./configure
-make
-make install
 
 #####################################################################################################
 ### Preparando Crontab: #############################################################################
