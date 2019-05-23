@@ -233,7 +233,7 @@ Contadorx=1
 while [ "$Resultadox" == "" ]
       do
         echo "Download Arquivo: [$Arquivox] - wget"
-        Comandox="wget --user=$bitbucketUser --password=$bitbucketPw https://bitbucket.org/generatech/mtdrepositorio/raw/cbe7c361519157ddf2cd7dde3a1e9de61b886214/paulo/$Arquivox -O /root/$Arquivox""x"" > /tmp/wgetrebuild 2>&1"
+        Comandox="wget --user=$bitbucketUser --password=$bitbucketPw https://bitbucket.org/generatech/mtdrepositorio/raw/10a7718509ac9fe0872c24923612ff3e7acbfd94/paulo/$Arquivox -O /root/$Arquivox""x"" > /tmp/wgetrebuild 2>&1"
         Resultadox=`eval $Comandox`
         Comandox="cat /tmp/wgetrebuild | grep saved"
         Resultadox=`eval $Comandox`
@@ -527,7 +527,7 @@ Contadorx=1
 while [ "$Resultadox" == "" ]
       do
         echo "Download Arquivo: [$Arquivox] - wget"
-        Comandox="wget --user=$bitbucketUser --password=$bitbucketPw https://bitbucket.org/generatech/mtdrepositorio/raw/cbe7c361519157ddf2cd7dde3a1e9de61b886214/paulo/$Arquivox -O /root/$Arquivox > /tmp/wgetrebuild 2>&1"
+        Comandox="wget --user=$bitbucketUser --password=$bitbucketPw https://bitbucket.org/generatech/mtdrepositorio/raw/10a7718509ac9fe0872c24923612ff3e7acbfd94/paulo/$Arquivox -O /root/$Arquivox > /tmp/wgetrebuild 2>&1"
         Resultadox=`eval $Comandox`
         Comandox="cat /tmp/wgetrebuild | grep saved"
         Resultadox=`eval $Comandox`
@@ -695,7 +695,6 @@ else
            fi
          done
    md5sum /root/arquivos.zip > /tmp/arquivos.zip.md5
-   /usr/bin/wput -v -B -u --disable-tls /tmp/arquivos.zip.md5 ftp://hvip:rogerioluz3079@hvip.com.br/www/mtd/rick/arquivos.zip.md5
    chmod 644 /root/$Arquivox
 fi
 
