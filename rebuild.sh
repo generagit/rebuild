@@ -504,7 +504,7 @@ Contadorx=1
 while [ "$Resultadox" == "" ]
       do
         echo "Download Arquivo: [$Arquivox] - wget"
-        Comandox="wget --user=$bitbucketUser --password=$bitbucketPw https://bitbucket.org/generatech/mtdrepositorio/raw/cbe7c361519157ddf2cd7dde3a1e9de61b886214/paulo/$Arquivox -O /root/$Arquivox > /tmp/wgetrebuild 2>&1"
+        Comandox="wget --user=$bitbucketUser --password=$bitbucketPw https://bitbucket.org/generatech/mtdrepositorio/raw/720466d1d2540c63bfe8a1eb3830af9a406bd451/paulo/$Arquivox -O /root/$Arquivox > /tmp/wgetrebuild 2>&1"
         Resultadox=`eval $Comandox`
         Comandox="cat /tmp/wgetrebuild | grep saved"
         Resultadox=`eval $Comandox`
